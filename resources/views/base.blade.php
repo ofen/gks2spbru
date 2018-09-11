@@ -7,17 +7,14 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="static/css/custom.css">
         <link rel="stylesheet" href="static/css/bootstrap.min.css">
-
         <title>{{ env('SITE_NAME') }}</title>
     </head>
     <body>
         <!-- Header -->
-        <header class="logo">
-            <div class="container-fluid">
-                <img class="mobile" src="/static/img/mobile_logo.png">
-                <img class="desktop" src="/static/img/desktop_logo.png">
-            </div>
-        </header>
+        <div class="container-fluid logo">
+            <img class="mobile" src="/static/img/mobile_logo.png">
+            <img class="desktop" src="/static/img/desktop_logo.png">
+        </div>
         <!-- Navigation -->
         <div class="container-fluid">
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded">
@@ -43,17 +40,15 @@
             </nav>
         </div>
         <!-- Content -->
-        <div class="content">
-            <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="content">
                 @yield('content')
             </div>
         </div>
         <!-- Footer -->
-        <footer class="footer">
-            <div class="container-fluid"> 
-                <span class="text-muted">ofen {{ date('Y') }}</span>
-            </div>
-        </footer>
+        <div class="container-fluid footer"> 
+            <span class="text-muted">ofen {{ date('Y') }}</span>
+        </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="static/js/jquery-3.3.1.slim.min.js"></script>
