@@ -42,6 +42,7 @@
         <!-- Content -->
         <div class="container-fluid">
             <div class="content">
+                <h4>@yield('title')</h4>
                 @yield('content')
             </div>
         </div>

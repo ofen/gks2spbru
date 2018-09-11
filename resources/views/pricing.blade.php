@@ -1,5 +1,9 @@
 @extends('base')
-
+@section('title')
+Тарифы
+@endsection
 @section('content')
-<p>Тарифы</p>
+<p>1 рубль</p>
+<p>2 рубля</p>
+<p>3 рубля</p>
 @endsection

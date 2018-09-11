@@ -1,5 +1,7 @@
 @extends('base')
-
+@section('title')
+Главная
+@endsection
 @section('content')
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat interdum ex ut egestas. Curabitur tempor, risus at mattis gravida, nisl odio auctor lectus, non aliquam est neque facilisis turpis. Praesent quis mauris pulvinar magna porta facilisis. Praesent at blandit neque, ut maximus nulla. Curabitur leo nulla, aliquam ac ultrices ac, ultrices non massa. Donec blandit felis at neque rhoncus convallis. Donec varius est mauris, ac consequat ante tristique in. Proin eu blandit odio. Aliquam dapibus ullamcorper cursus. Phasellus placerat pharetra arcu. Cras scelerisque justo sit amet arcu venenatis, volutpat lacinia velit vulputate. Mauris at gravida urna, eu egestas enim. Proin non felis pellentesque, tincidunt sapien vel, porta purus. Aliquam vitae urna sed enim venenatis sodales id ac ante.</p>
 

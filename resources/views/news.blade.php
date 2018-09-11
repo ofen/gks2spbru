@@ -1,5 +1,7 @@
 @extends('base')
-
+@section('title')
+Новости
+@endsection
 @section('content')
-<h4>Новости</h4>
+<p>Текст новости</p>
 @endsection
