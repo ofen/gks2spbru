@@ -15,6 +15,10 @@ $router->get('/', function () {
     return view('index');
 });
 
+$router->get('/news', function () {
+    return view('news');
+});
+
 $router->get('/about', function() {
     return view('about');
 });

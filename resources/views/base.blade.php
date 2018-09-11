@@ -19,8 +19,8 @@
             </div>
         </header>
         <!-- Navigation -->
-        <div class="container-fluid my-3">
-            <nav class="navbar navbar-expand-md bg-dark navbar-dark rounded">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,6 +28,9 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="{{ isActiveRoute('/') }}" href="/">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="{{ isActiveRoute('news') }}" href="/news">Новости</a>
                         </li>
                         <li class="nav-item">
                             <a class="{{ isActiveRoute('about') }}" href="/about">О компании</a>
@@ -40,10 +43,17 @@
             </nav>
         </div>
         <!-- Content -->
-        <div class="container-fluid mx-3 my-3">
-            @yield('content')
+        <div class="content">
+            <div class="container-fluid">
+                @yield('content')
+            </div>
         </div>
-
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container-fluid"> 
+                <span class="text-muted">ofen {{ date('Y') }}</span>
+            </div>
+        </footer>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="static/js/jquery-3.3.1.slim.min.js"></script>
