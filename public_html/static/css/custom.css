@@ -41,17 +41,17 @@
 }
 
 .content {
-    margin: 1rem;
+    padding: : 1rem;
 }
 
 html {
   position: relative;
   min-height: 100%;
-  /*overflow-x: hidden;*/
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 60px!important;
+  padding-bottom: 0.5rem;
 }
 .footer {
   position: absolute;
