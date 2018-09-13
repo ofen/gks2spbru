@@ -4,8 +4,9 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS -->
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="static/css/custom.css">
+        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="static/css/bootstrap.min.css">
         <title>{{ env('SITE_NAME') }}</title>
     </head>
@@ -17,7 +18,7 @@
         </div>
         <!-- Navigation -->
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

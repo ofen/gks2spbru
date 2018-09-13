@@ -1,6 +1,6 @@
 @extends('base')
 @section('title')
-Новости
+{{ $title }}
 @endsection
 @section('content')
 <div class="card my-3">

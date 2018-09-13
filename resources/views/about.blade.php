@@ -1,6 +1,6 @@
 @extends('base')
 @section('title')
-О компании
+{{ $title }}
 @endsection
 @section('content')
 <p>Бла бла бла</p>

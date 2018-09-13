@@ -1,6 +1,6 @@
 @extends('base')
 @section('title')
-Тарифы
+{{ $title }}
 @endsection
 @section('content')
 <p>1 рубль</p>
