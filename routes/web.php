@@ -19,10 +19,14 @@ $router->get('/news', function () {
     return view('news', ['page_title' => 'Новости']);
 });
 
-$router->get('/about', function() {
+$router->get('/about', function () {
     return view('about', ['page_title' => 'О компании']);
 });
 
-$router->get('/pricing', function() {
+$router->get('/pricing', function () {
     return view('pricing', ['page_title' => 'Тарифы']);
+});
+
+$router->get('/reception', function () {
+    return view('reception', ['page_title' => 'Интернет приемная']);
 });

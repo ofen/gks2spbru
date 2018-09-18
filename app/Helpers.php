@@ -2,8 +2,8 @@
 
 function isActiveRoute($route) {
     if (app('request')->is($route)) {
-        return 'nav-link active';
+        return 'active';
     } else {
-        return 'nav-link';
+        return '';
     }
 }

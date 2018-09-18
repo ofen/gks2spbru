@@ -6,11 +6,11 @@
         <ul class="navbar-nav">
             <!-- Item -->
             <li class="nav-item">
-                <a class="{{ isActiveRoute('/') }}" href="/">Главная</a>
+                <a class="nav-link {{ isActiveRoute('/') }}" href="{{ url('/') }}">Главная</a>
             </li>
             <!-- Item -->
             <li class="nav-item">
-                <a class="{{ isActiveRoute('news') }}" href="/news">Новости</a>
+                <a class="nav-link {{ isActiveRoute('news') }}" href="{{ url('news') }}">Новости</a>
             </li>
             <!-- Item -->
             <li class="nav-item dropdown">
@@ -57,7 +57,7 @@
             </li>
             <!-- Item -->
             <li class="nav-item">
-                <a class="nav-link" href="#">Онлайн приемная</a>
+                <a class="nav-link" href="{{ url('reception') }}">Интернет приемная</a>
             </li>
         </ul>
     </div>
