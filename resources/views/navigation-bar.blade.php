@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark rounded">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -14,7 +14,7 @@
             </li>
             <!-- Item -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">О компании</a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $menu1 }}</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Общая информация</a>
                     <a class="dropdown-item" href="#">Структура организации</a>
@@ -57,7 +57,7 @@
             </li>
             <!-- Item -->
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('reception') }}">Интернет приемная</a>
+                <a class="nav-link {{ isActiveRoute('reception') }}" href="{{ url('reception') }}">Интернет приемная</a>
             </li>
         </ul>
     </div>

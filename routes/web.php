@@ -12,7 +12,7 @@
 */
 
 $router->get('/', function () {
-    return view('index', ['page_title' => 'Главная']);
+    return view('index', ['page_title' => 'Главная', 'menu1' => 'О компании']);
 });
 
 $router->get('/news', function () {
