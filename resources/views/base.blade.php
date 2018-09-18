@@ -18,32 +18,11 @@
         </div>
         <!-- Navigation -->
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="{{ isActiveRoute('/') }}" href="/">Главная</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="{{ isActiveRoute('news') }}" href="/news">Новости</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="{{ isActiveRoute('about') }}" href="/about">О компании</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="{{ isActiveRoute('pricing') }}" href="/pricing">Тарифы</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            @include('navigation-bar')
         </div>
         <!-- Content -->
         <div class="container-fluid">
             <div class="content">
-                <h4>@yield('title')</h4>
                 @yield('content')
             </div>
         </div>

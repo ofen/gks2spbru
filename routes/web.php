@@ -12,17 +12,17 @@
 */
 
 $router->get('/', function () {
-    return view('index', ['title' => 'Главная']);
+    return view('index', ['page_title' => 'Главная']);
 });
 
 $router->get('/news', function () {
-    return view('news', ['title' => 'Новости']);
+    return view('news', ['page_title' => 'Новости']);
 });
 
 $router->get('/about', function() {
-    return view('about', ['title' => 'О компании']);
+    return view('about', ['page_title' => 'О компании']);
 });
 
 $router->get('/pricing', function() {
-    return view('pricing', ['title' => 'Тарифы']);
+    return view('pricing', ['page_title' => 'Тарифы']);
 });

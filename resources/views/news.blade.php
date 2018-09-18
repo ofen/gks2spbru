@@ -1,8 +1,6 @@
 @extends('base')
-@section('title')
-{{ $title }}
-@endsection
 @section('content')
+<h4>{{ $page_title }}</h4>
 <div class="card my-3">
   <div class="card-body">
     <h5 class="card-title">Новость 1</h5>

@@ -1,7 +1,5 @@
 @extends('base')
-@section('title')
-{{ $title }}
-@endsection
 @section('content')
+<h4>{{ $page_title }}</h4>
 <p>Бла бла бла</p>
 @endsection
