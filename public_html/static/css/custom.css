@@ -71,3 +71,7 @@ body {
 .dropdown-item {
    white-space: normal;
 }
+
+select option:disabled {
+  color: #6c757d!important;
+}

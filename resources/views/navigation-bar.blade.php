@@ -6,15 +6,15 @@
         <ul class="navbar-nav">
             <!-- Item -->
             <li class="nav-item">
-                <a class="nav-link {{ isActiveRoute('/') }}" href="{{ url('/') }}">Главная</a>
+                <a class="nav-link {{ isActiveRoute('/') }}" href="{{ url('/') }}">{{ $menu[0] }}</a>
             </li>
             <!-- Item -->
             <li class="nav-item">
-                <a class="nav-link {{ isActiveRoute('news') }}" href="{{ url('news') }}">Новости</a>
+                <a class="nav-link {{ isActiveRoute('news') }}" href="{{ url('news') }}">{{ $menu[1] }}</a>
             </li>
             <!-- Item -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $menu1 }}</a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $menu[2] }}</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Общая информация</a>
                     <a class="dropdown-item" href="#">Структура организации</a>
@@ -32,7 +32,7 @@
             </li>
             <!-- Item -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $menu[3] }}</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Платные услуги</a>
                     <a class="dropdown-item" href="#">Тарифы</a>
@@ -43,7 +43,7 @@
             </li>
             <!-- Item -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Планы и отчеты</a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $menu[4] }}</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Годовая бухгалтерская отчетность</a>
                     <a class="dropdown-item" href="#">Сведения о доходах и расходах</a>
@@ -57,7 +57,7 @@
             </li>
             <!-- Item -->
             <li class="nav-item">
-                <a class="nav-link {{ isActiveRoute('reception') }}" href="{{ url('reception') }}">Интернет приемная</a>
+                <a class="nav-link {{ isActiveRoute('reception') }}" href="{{ url('reception') }}">{{ $menu[5] }}</a>
             </li>
         </ul>
     </div>

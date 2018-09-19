@@ -4,28 +4,24 @@
 <form>
     <!-- Field -->
     <div class="form-group">
-        <label for="fullName">ФИО (полностью)</label>
         <input type="text" class="form-control" id="fullName" placeholder="ФИО">
     </div>
     <!-- Field -->
     <div class="form-group">
-        <label for="address">Ваш адрес</label>
-        <input type="text" class="form-control" id="address" placeholder="Адрес">
+        <input type="text" class="form-control" id="address" placeholder="Ваш адрес">
     </div>
     <!-- Field -->
     <div class="form-group">
-        <label for="phone">Ваш номер телефона</label>
-        <input type="text" class="form-control" id="phone" placeholder="+7 812 765-43-21">
+        <input type="text" class="form-control" id="phone" placeholder="Ваш номер телефона">
     </div>
     <!-- Field -->
     <div class="form-group">
-        <label for="email">Ваш e-mail</label>
-        <input type="email" class="form-control" id="email" placeholder="email@domain.ru">
+        <input type="email" class="form-control" id="email" placeholder="E-mail адрес">
     </div>
     <!-- Field -->
     <div class="form-group">
-        <label for="messageSubject">Тема письма</label>
         <select class="custom-select" id="messageSubject">
+            <option value="" disabled selected hidden>Выберите тему</option>
             <option>Обращение</option>
             <option>Пожелание</option>
             <option>Заявление</option>
@@ -37,7 +33,6 @@
     </div>
     <!-- Field -->
     <div class="form-group">
-        <label for="messageBody">Текст письма</label>
         <textarea class="form-control" id="messageBody" rows="3"></textarea>
     </div>
     <!-- Field -->
