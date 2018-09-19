@@ -66,6 +66,10 @@ body {
 
 .dropdown-menu {
     min-width: 250px;
+    /*height: auto;*/
+    max-height: 250px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .dropdown-item {
