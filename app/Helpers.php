@@ -1,6 +1,6 @@
 <?php
 
-function isActiveRoute($route) {
+function isActive($route) {
     if (app('request')->is($route)) {
         return 'active';
     } else {

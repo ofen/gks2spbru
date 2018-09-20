@@ -46,14 +46,9 @@
     padding: 1rem;
 }
 
-html {
-    position: relative;
-    min-height: 100%;
-}
 body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    padding-bottom: 0.5rem;
+    /* Padding bottom by footer height */
+    padding-bottom: 60px;
     background-color: #FCF9DE;
 }
 .footer {
@@ -64,12 +59,12 @@ body {
     line-height: 60px; /* Vertically center the text there */
 }
 
-.dropdown-menu {
+.navbar {
+    border-radius: 0;
+}
+
+/*.dropdown-menu {
     min-width: 250px;
-    /*height: auto;*/
-    max-height: 250px;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 .dropdown-item {
@@ -78,4 +73,4 @@ body {
 
 select option:disabled {
   color: #6c757d!important;
-}
+}*/

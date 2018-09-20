@@ -20,8 +20,8 @@
     </div>
     <!-- Field -->
     <div class="form-group">
-        <select class="custom-select" id="messageSubject">
-            <option value="" disabled selected hidden>Выберите тему</option>
+        <select class="form-control" id="subject">
+            <option disabled selected hidden>Выберите тему</option>
             <option>Обращение</option>
             <option>Пожелание</option>
             <option>Заявление</option>
@@ -33,14 +33,14 @@
     </div>
     <!-- Field -->
     <div class="form-group">
-        <textarea class="form-control" id="messageBody" rows="3"></textarea>
+        <textarea class="form-control" id="body" rows="3" placeholder="Введите текст сообщения"></textarea>
     </div>
     <!-- Field -->
-    <div class="custom-file">
+    <div class="form-group">
         <label class="custom-file-label" for="attachment">Выберите файл</label>
         <input type="file" class="custom-file-input" id="attachment">
     </div>
     <!-- Button -->
-    <button type="submit" class="btn btn-primary mt-3">Отправить</button>
+    <button type="submit" class="btn btn-primary">Отправить</button>
 </form>
 @endsection

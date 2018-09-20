@@ -3,7 +3,8 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="static/css/bootstrap.min.css">
         <!-- Custom CSS -->
@@ -12,14 +13,12 @@
     </head>
     <body>
         <!-- Header -->
-        <div class="container-fluid logo">
+        <div class="jumbotron logo">
             <img class="mobile" src="/static/img/mobile_logo.png">
             <img class="desktop" src="/static/img/desktop_logo.png">
         </div>
         <!-- Navigation -->
-        <div class="container-fluid">
-            @include('navigation-bar')
-        </div>
+        @include('navigation-bar')
         <!-- Content -->
         <div class="container-fluid">
             <div class="content">
@@ -27,13 +26,13 @@
             </div>
         </div>
         <!-- Footer -->
-        <div class="container-fluid footer"> 
-            <span class="text-muted">ofen {{ date('Y') }}</span>
-        </div>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="static/js/jquery-3.3.1.slim.min.js"></script>
-        <script src="static/js/popper.min.js"></script>
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container-fluid"> 
+                <p class="navbar-text">ofen {{ date('Y') }}</p>
+            </div>
+        </nav>
+        <!-- jQuery and Bootstrap JS -->
+        <script src="static/js/jquery-3.3.1.min.js"></script>
         <script src="static/js/bootstrap.min.js"></script>
     </body>
 </html>
